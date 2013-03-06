@@ -92,3 +92,10 @@ Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'L9'
 Bundle 'tpope/vim-repeat'
 Bundle 'mattn/webapi-vim'
+" My locals
+Bundle 'DfrankUtil'
+Bundle 'vimprj'
+Bundle 'wombat256.vim'
+Bundle 'chef.vim'
+Bundle 'project.tar.gz'
+

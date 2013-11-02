@@ -78,6 +78,11 @@ Bundle 'jc00ke/vim-tomdoc'
 "   Golang
 Bundle 'jnwhiteh/vim-golang'
 Bundle 'Blackrush/vim-gocode'
+"   Clojure
+Bundle 'tpope/vim-fireplace'
+Bundle 'tpope/vim-classpath'
+Bundle 'guns/vim-clojure-static'
+Bundle 'kien/rainbow_parentheses.vim'
 "   Other Languages
 Bundle 'msanders/cocoa.vim'
 Bundle 'mutewinter/taskpaper.vim'

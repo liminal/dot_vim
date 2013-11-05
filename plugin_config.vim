@@ -103,26 +103,35 @@ nnoremap <leader>m :CtrlPMRUFiles<CR>
 nnoremap <leader>b :CtrlPBuffer<CR>
 
 " ---------------
-" Powerline
+" Airline
 " ---------------
-" Keep ^B from showing on Windows in Powerline
-if has('win32') || has('win64')
-  let g:Powerline_symbols = 'compatible'
-elseif has('gui_macvim')
-  let g:Powerline_symbols = 'fancy'
-endif
-call Pl#Theme#InsertSegment('ws_marker', 'after', 'lineinfo')
 
-" Abbreviate All of the Mode Names
-let g:Powerline_mode_n = 'N'
-let g:Powerline_mode_i = 'I'
-let g:Powerline_mode_R = 'R'
-let g:Powerline_mode_v = 'V'
-let g:Powerline_mode_V = 'VL'
-let g:Powerline_mode_cv = 'VB'
-let g:Powerline_mode_s = 'S'
-let g:Powerline_mode_S = 'SL'
-let g:Powerline_mode_cs = 'SB'
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif
+
+" unicode symbols
+let g:airline_left_sep = '»'
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '«'
+let g:airline_right_sep = '◀'
+let g:airline_symbols.linenr = '␊'
+let g:airline_symbols.linenr = '␤'
+let g:airline_symbols.linenr = '¶'
+let g:airline_symbols.branch = '⎇'
+let g:airline_symbols.paste = 'ρ'
+let g:airline_symbols.paste = 'Þ'
+let g:airline_symbols.paste = '∥'
+let g:airline_symbols.whitespace = 'Ξ'
+
+" powerline symbols
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline_symbols.branch = ''
+let g:airline_symbols.readonly = ''
+let g:airline_symbols.linenr = ''
 
 " ---------------
 " jellybeans.vim colorscheme tweaks

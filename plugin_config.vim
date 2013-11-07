@@ -14,6 +14,9 @@ let g:space_disable_select_mode=1
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_loc_list=1
 
+" Disable .sh because the checker breaks on valid globs
+let g:syntastic_disabled_filetypes=['sh'] 
+
 " Platform-specific config files
 if has('win32') || has('win64')
   let g:syntastic_jsl_conf=$HOME.'/.vim/config/windows/syntastic/jsl.conf'

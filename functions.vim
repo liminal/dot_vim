@@ -168,3 +168,6 @@ function WriteBuffer()
 endfunction
 
 noremap <silent> <enter> :call WriteBuffer()<CR>
+
+command! FormatJSON %!python -m json.tool
+

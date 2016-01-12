@@ -230,3 +230,5 @@ let g:ycm_complete_in_comments_and_strings=1
 nmap <Leader>bi :BundleInstall<CR>
 nmap <Leader>bu :BundleInstall!<CR> " Because this also updates
 nmap <Leader>bc :BundleClean<CR>
+
+let g:go_fmt_command = "goimports"

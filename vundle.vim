@@ -97,6 +97,7 @@ Plugin 'tpope/vim-cucumber'
 Plugin 'groovy.vim'
 Plugin 'Python-mode-klen'
 Plugin 'liminal/vim-rapid'
+Plugin 'kylef/apiblueprint.vim'
 
 Plugin 'tfnico/vim-gradle'
 " MatchIt

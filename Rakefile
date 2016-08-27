@@ -93,8 +93,8 @@ end
 # Returns an array of plugins denoted with Bundle
 def parse_plugins_from_vimrc
   plugins = []
-  File.new('vundle.vim').each do |line|
-    if line =~ /^Bundle\s+["'](.+)["']/
+  File.new('vim-plug.vim').each do |line|
+    if line =~ /^Plug\s+["'](.+)["']/
       plugins << convert_to_link_hash($1)
     end
   end

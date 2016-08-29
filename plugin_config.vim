@@ -17,12 +17,6 @@ let g:syntastic_auto_loc_list=1
 " Disable .sh because the checker breaks on valid globs
 let g:syntastic_disabled_filetypes=['sh'] 
 
-" Platform-specific config files
-if has('win32') || has('win64')
-  let g:syntastic_jsl_conf=$HOME.'/.vim/config/windows/syntastic/jsl.conf'
-  let g:syntastic_disabled_filetypes=['sh'] " Disable .sh on Windows
-endif
-
 " ---------------
 " NERDTree
 " ---------------
@@ -127,15 +121,6 @@ let g:airline_symbols.paste = 'Þ'
 let g:airline_symbols.paste = '∥'
 let g:airline_symbols.whitespace = 'Ξ'
 
-" powerline symbols
-"let g:airline_left_sep = ''
-"let g:airline_left_alt_sep = ''
-"let g:airline_right_sep = ''
-"let g:airline_right_alt_sep = ''
-"let g:airline_symbols.branch = ''
-"let g:airline_symbols.readonly = ''
-"let g:airline_symbols.linenr = ''
-
 " ---------------
 " jellybeans.vim colorscheme tweaks
 " ---------------
@@ -223,12 +208,5 @@ let g:mta_filetypes = {
 " YouCompleteMe
 " ---------------
 let g:ycm_complete_in_comments_and_strings=1
-
-" ---------------
-" Vundle
-" ---------------
-nmap <Leader>bi :BundleInstall<CR>
-nmap <Leader>bu :BundleInstall!<CR> " Because this also updates
-nmap <Leader>bc :BundleClean<CR>
 
 let g:go_fmt_command = "goimports"

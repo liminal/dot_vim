@@ -19,10 +19,12 @@ Plug 'nathanaelkane/vim-indent-guides'
 Plug 'vim-airline/vim-airline'
 
 " A colorful, dark color scheme for Vim.
-Plug 'nanotech/jellybeans.vim'
+" Plug 'nanotech/jellybeans.vim'
 
 " Wombat for 256 color xterms
-Plug 'vim-scripts/wombat256.vim' 
+" Plug 'vim-scripts/wombat256.vim' 
+
+Plug 'altercation/vim-colors-solarized'
 
 " -----------------------------------
 " Martin Grenfell (scroolose) plugins

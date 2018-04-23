@@ -6,7 +6,7 @@
 " Color
 " ---------------
 set background=dark
-colorscheme jellybeans
+colorscheme solarized
 
 " -----------------------------
 " Backups, Tmp Files, and Undo
